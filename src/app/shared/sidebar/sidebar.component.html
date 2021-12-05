@@ -41,7 +41,8 @@
                         <li>
                             <a *ngFor="let subitem of item.submenu"
                                 [routerLink]="subitem.url"
-                                routerLinkActive="active">
+                                routerLinkActive="active"
+                                [routerLinkActiveOptions]="{ exact: true }">
                                 {{ subitem.titulo }} 
                             </a>
                         </li>
